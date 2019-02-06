@@ -1,6 +1,5 @@
 /* :root {
-    background: #0f0;
-    font-family: Calibri Light
+    background: url("../img/logo-liber-salus.png")  center fixed;
 }    */
 
 .fa-1x {
@@ -29,7 +28,9 @@ color: #004d40;
 
 /* Inicio genéricos */
     body {
-        background-image: url('/img/logo-liber-salus.png');
+        background: url("../img/logo-liber-salus.png") center;
+        background-size: 60%;
+        background-repeat: no-repeat;
     }
     .custom-dark-blue-color {
         color: rgb(0, 117, 175);
@@ -101,6 +102,9 @@ color: #004d40;
         font-size: 12rem;
         line-height: 0.3;
     }
+    #bootstrap_overrides .custom-teeth-open-icon{
+        font-size: 11rem;
+    }
     .text-forward {
         margin-top: -1.4em;
     }
@@ -129,3 +133,47 @@ color: #004d40;
         background: #ff6f00;
     }
 /* Fin pruebas */
+
+
+/* Inicio media queries. fuente: https://www.w3schools.com/css/css_rwd_mediaqueries.asp*/
+    /* Extra small devices (phones, 600px and down) */
+    @media only screen and (max-width: 600px) {
+        #bootstrap_overrides {
+            background-color: #808;
+        }
+        #bootstrap_overrides .custom-search-bar {
+            width: 248px;
+        }
+        #bootstrap_overrides .custom-search-icon {
+            margin-right: -18px;
+        }        
+    } 
+
+    /* Small devices (portrait tablets and large phones, 600px and up) */
+    @media only screen and (min-width: 600px) {
+        #bootstrap_overrides {
+            background-color: #000;
+        }
+    } 
+
+    /* Medium devices (landscape tablets, 768px and up) */
+    @media only screen and (min-width: 768px) {
+        #bootstrap_overrides {
+            background-color: #0f0;
+        }
+    } 
+
+    /* Large devices (laptops/desktops, 992px and up) */
+    @media only screen and (min-width: 992px) {
+        #bootstrap_overrides {
+            background-color: #f00;
+        }
+    } 
+
+    /* Extra large devices (large laptops and desktops, 1200px and up) */
+    @media only screen and (min-width: 1200px) {
+        #bootstrap_overrides {
+            background-color: #0ff;
+        }
+    }
+/* Fin media queries */
