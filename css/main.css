@@ -1,0 +1,131 @@
+/* :root {
+    background: #0f0;
+    font-family: Calibri Light
+}    */
+
+.fa-1x {
+font-size: 1.5rem;
+}
+.navbar-toggler.toggler-example {
+cursor: pointer;
+}
+.dark-blue-text {
+color: #0A38F5;
+}
+.dark-pink-text {
+color: #AC003A;
+}
+.dark-amber-text {
+color: #ff6f00;
+}
+.dark-teal-text {
+color: #004d40;
+}
+
+
+
+/* MY */
+
+
+/* Inicio genéricos */
+    body {
+        background-image: url('/img/logo-liber-salus.png');
+    }
+    .custom-dark-blue-color {
+        color: rgb(0, 117, 175);
+    }
+    .regular-font {
+        font-family: Century Gothic, Calibri
+    }
+    .bold-font {
+        font-family: Century Gothic Bold, Calibri
+    }
+    .icon-behind {
+        z-index: -10;
+        color: rgba(255, 255, 255, 0.2);
+    }
+    .margin-bottom-row {
+        margin-bottom: 120px;
+    }
+/* Fin genéricos */
+
+
+/* Inicio NavBar */
+    .custom-navbar-gray {
+        background: rgb(215, 213, 213);
+    }
+    #bootstrap_overrides .custom-search-bar {
+        border-radius: 20px;
+        height: 36px;
+        width: 388px;
+    }
+    .custom-hamburger, .custom-search-icon {
+        font-size: 2.25rem;
+    }
+    #bootstrap_overrides .navbar{
+        padding: 0.4rem 1rem;
+    }
+/* Fin NavBar */
+
+
+/* Inicio boton Identificación */
+    #bootstrap_overrides .custom-identify-icon {
+        font-size: 3.7rem;
+        line-height: 0.8;
+    }
+    #bootstrap_overrides .custom-btn-identify {
+        background: rgb(148, 193, 33);
+        height: 64px;
+        width: 594px;
+        border-radius: 20px;
+        box-shadow: 0px 0px 66px #afafaf;
+    }
+    .custom-vertical-padding {
+        padding: 36px 0px;
+    }
+/* Fin boton Identificación */
+
+
+/* Inicio botones genericos home */
+    #bootstrap_overrides .custom-btn-dark {
+        background-color: rgb(0, 117, 175);
+        height: 255px;
+        width: 255px;
+        border-radius: 20px;
+        box-shadow: 0px 0px 66px #afafaf;
+    }
+    #bootstrap_overrides .custom-visual-icon, 
+    #bootstrap_overrides .custom-auditory-icon,
+    #bootstrap_overrides .custom-walking-icon,
+    #bootstrap_overrides .custom-teeth-open-icon{
+        font-size: 12rem;
+        line-height: 0.3;
+    }
+    .text-forward {
+        margin-top: -1.4em;
+    }
+    .text-forward2 {
+        margin-top: -3.0em;
+    }
+    .custom-bioimpedance-icon, .custom-vital-signs-icon {
+        opacity: 0.2;
+    }
+    /* Inicio boton con imagen atras */
+        .text-forward-img {
+            margin-top: -3.4em;
+        }
+        .img-behind {
+            transform: scale(2.2);
+        }
+    /* Fin boton con imagen atras */
+/* Fin botones genericos home */
+
+
+/* Inicio pruebas */
+    .testbg {
+        background-color: aqua;
+    }
+    .testbg2 {
+        background: #ff6f00;
+    }
+/* Fin pruebas */
