@@ -2,7 +2,7 @@
 
 /* Inicio genéricos */
     body {
-        background: url("../img/logo-liber-salus2.png") center;
+        background: url("../img/logo-liber-salus2.png") center fixed;
         background-size: 60%;
         background-repeat: no-repeat;
     }
@@ -39,6 +39,16 @@
     }
     #bootstrap_overrides .navbar{
         padding: 0.4rem 1rem;
+    }
+    .text-royal-blue {
+        color: rgb(0, 117, 175);
+    }
+    #bootstrap_overrides .custom-btn-identify-signed-in {
+        background: rgb(247, 164, 26);
+        height: 64px;
+        width: 594px;
+        border-radius: 20px;
+        box-shadow: 0px 0px 66px #afafaf;
     }
 /* Fin NavBar */
 
@@ -98,6 +108,59 @@
     /* Fin boton con imagen atras */
 /* Fin botones genericos home */
 
+/* Inicio identify */
+    .letter-section {
+        margin-bottom: 27px;
+    }
+    .gray-letter {
+        color: rgb(176, 172, 171);
+        display: inline;
+    }
+    .gray-line {
+        border: 1px solid rgb(176, 172, 171);
+        float: right;
+        width: 95.5%;
+    }
+    #bootstrap_overrides .custom-btn-slim {
+        border: 2px solid rgb(0, 117, 175);
+        width: 100%;
+        height: 40px;
+        border-radius: 20px;
+        margin-bottom: 15px !important;
+    }
+    #bootstrap_overrides .custom-btn-slim-filled {
+        border: 2px solid rgb(0, 117, 175);
+        background-color: rgb(0, 117, 175);
+        width: 100%;
+        height: 40px;
+        border-radius: 20px;
+        margin-bottom: 15px !important;
+    }
+    #bootstrap_overrides .person-basic-data > *{
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 1rem;
+    }
+    #bootstrap_overrides .custom-full-name {
+        float: left;
+    }
+    #bootstrap_overrides .custom-curp {
+
+    }
+    .empty-cell-before-file {
+        /* background: blue; */
+        height: 57px;
+    }
+
+    .custom-file-icon {
+        font-size: 2.4rem;
+    }
+
+    .document {
+        margin-bottom: 16px;
+    }
+/* Fin identify */
+
 
 /* Inicio pruebas */
     .testbg {
@@ -105,6 +168,9 @@
     }
     .testbg2 {
         background: #ff6f00;
+    }
+    .testbg3 {
+        background: #997355;
     }
 /* Fin pruebas */
 
