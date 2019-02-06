@@ -1,34 +1,8 @@
-/* :root {
-    background: url("../img/logo-liber-salus.png")  center fixed;
-}    */
-
-.fa-1x {
-font-size: 1.5rem;
-}
-.navbar-toggler.toggler-example {
-cursor: pointer;
-}
-.dark-blue-text {
-color: #0A38F5;
-}
-.dark-pink-text {
-color: #AC003A;
-}
-.dark-amber-text {
-color: #ff6f00;
-}
-.dark-teal-text {
-color: #004d40;
-}
-
-
-
 /* MY */
-
 
 /* Inicio genéricos */
     body {
-        background: url("../img/logo-liber-salus.png") center;
+        background: url("../img/logo-liber-salus2.png") center;
         background-size: 60%;
         background-repeat: no-repeat;
     }
@@ -45,7 +19,7 @@ color: #004d40;
         z-index: -10;
         color: rgba(255, 255, 255, 0.2);
     }
-    .margin-bottom-row {
+    [class*="col-lg-4"] {
         margin-bottom: 120px;
     }
 /* Fin genéricos */
@@ -138,42 +112,79 @@ color: #004d40;
 /* Inicio media queries. fuente: https://www.w3schools.com/css/css_rwd_mediaqueries.asp*/
     /* Extra small devices (phones, 600px and down) */
     @media only screen and (max-width: 600px) {
-        #bootstrap_overrides {
+        /* #bootstrap_overrides {
             background-color: #808;
-        }
+        } */
         #bootstrap_overrides .custom-search-bar {
             width: 187px;
         }
         #bootstrap_overrides .custom-search-icon {
             margin-right: -18px;
-        }        
+        }
+        #bootstrap_overrides .custom-btn-identify {
+            width: 412px;
+        }
+        .img-behind {
+            transform: scale(1.2);
+            margin-top: -20px;
+        }
+        #bootstrap_overrides .custom-btn-dark {
+            height: 150px;
+            width: 150px;
+        }
+
+        /* Inicio botones con img dentro */
+            .text-forward-img {
+                margin-top: -4em;
+            }
+            .custom-bioimpedance-text, .custom-vital-signs-text {
+                font-size: 1rem;
+            }
+        /* Fin botones con img dentro */
+
+        .text-forward2 {
+            margin-top: -4rem;
+            font-size: 1.6rem;
+        }
+
+        #bootstrap_overrides .custom-visual-icon, #bootstrap_overrides .custom-auditory-icon, #bootstrap_overrides .custom-walking-icon, #bootstrap_overrides .custom-teeth-open-icon {
+            font-size: 7rem;
+            line-height: 0.4;
+        }
+
+        #bootstrap_overrides .custom-teeth-open-icon{
+            font-size: 6rem;
+        }
     } 
 
     /* Small devices (portrait tablets and large phones, 600px and up) */
     @media only screen and (min-width: 600px) {
-        #bootstrap_overrides {
+        /* #bootstrap_overrides {
             background-color: #000;
-        }
+        } */
     } 
 
     /* Medium devices (landscape tablets, 768px and up) */
     @media only screen and (min-width: 768px) {
-        #bootstrap_overrides {
+        /* #bootstrap_overrides {
             background-color: #0f0;
+        } */
+        .margin-bottom-row {
+            margin-bottom: 0;
         }
     } 
 
     /* Large devices (laptops/desktops, 992px and up) */
     @media only screen and (min-width: 992px) {
-        #bootstrap_overrides {
+        /* #bootstrap_overrides {
             background-color: #f00;
-        }
+        } */
     } 
 
     /* Extra large devices (large laptops and desktops, 1200px and up) */
     @media only screen and (min-width: 1200px) {
-        #bootstrap_overrides {
+        /* #bootstrap_overrides {
             background-color: #0ff;
-        }
+        } */
     }
 /* Fin media queries */
