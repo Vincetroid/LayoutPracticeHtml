@@ -187,7 +187,7 @@
         #bootstrap_overrides .custom-search-icon {
             margin-right: -18px;
         }
-        #bootstrap_overrides .custom-btn-identify {
+        #bootstrap_overrides .custom-btn-identify, #bootstrap_overrides .custom-btn-identify-signed-in  {
             width: 412px;
         }
         .img-behind {
