@@ -9,11 +9,20 @@
     .custom-dark-blue-color {
         color: rgb(0, 117, 175);
     }
+    @font-face {
+        font-family: 'Century Gothic';
+        src: url('../fonts/gothic.eot');
+        src: local('gothic'), url('../fonts/gothic.woff') format('woff'), url('../fonts/gothic.ttf') format('truetype');
+    }
+    .fontsforweb_fontid_9785 {
+        font-family: 'Century Gothic' !important;
+    }
     .regular-font {
-        font-family: Century Gothic, Calibri
+        font-family: Century Gothic
     }
     .bold-font {
-        font-family: Century Gothic Bold, Calibri
+        font-family: Century Gothic;
+        font-weight: bold;
     }
     .icon-behind {
         z-index: -10;
@@ -25,6 +34,9 @@
     [class*="col-xs-0"] {
         flex: 0 0 0;
         max-width: 0;
+    }
+    .vertical-margin-bottom {
+        margin-bottom: 36px;
     }
 /* Fin genéricos */
 
@@ -146,7 +158,7 @@
         margin-bottom: 0;
         font-size: 1rem;
     }
-    #bootstrap_overrides .custom-full-name {
+    #bootstrap_overrides .custom-full-name, .float-left {
         float: left;
     }
     #bootstrap_overrides .custom-curp {
@@ -168,7 +180,65 @@
     .document {
         margin-bottom: 16px;
     }
+    .custom-bioimpedance-text {
+        font-size: 1.7rem;
+    }
 /* Fin identify */
+
+/* Inicio bioimpedancia y antropometria */
+    .custom-bioimpedance-icon-small {
+        
+    }
+    .img-behind-small {
+        transform: scale(0.6);
+        margin-top: -24px;
+    }
+    .text-forward-img-small {
+        margin-top: -2.1em;
+    }
+    p.instructions-paragraph {
+        text-align: justify;
+    }
+    .custom-full-name-big {
+        font-size: 1.5rem;
+    }
+    .custom-table-form > table > tbody > tr > td {
+        border: none;
+        vertical-align: inherit;
+        padding: 0rem;
+    }
+    #bootstrap_overrides [type="text"] {
+        border: 2px solid rgb(248, 171, 43);
+        width: 100%;
+        height: 40px;
+        border-radius: 25px;
+    }
+    .units {
+        margin-left: 70px;
+    }
+    .custom-form-label-element {
+        font-size: 1.2rem;
+    }
+    .width-35-per {
+        width: 35%;
+    }
+    .width-50-per {
+        width: 50%;
+    }
+    .width-15-per {
+        width: 15%;
+    }
+    #bootstrap_overrides .custom-btn-save {
+        background-color: rgb(0, 117, 175);
+        height: 78px;
+        width: 250px;
+        border-radius: 20px;
+        box-shadow: 0px 0px 66px #afafaf;
+    }
+    .custom-btn-save-text {
+        font-size: 1.4rem;
+    }
+/* Fin bioimpedancia y antropometria */
 
 
 /* Inicio pruebas */
@@ -212,7 +282,10 @@
             .text-forward-img {
                 margin-top: -4em;
             }
-            .custom-bioimpedance-text, .custom-vital-signs-text {
+            .custom-bioimpedance-text {
+                font-size: 0.8rem;
+            }
+            .custom-vital-signs-text {
                 font-size: 1rem;
             }
         /* Fin botones con img dentro */
