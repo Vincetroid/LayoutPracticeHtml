@@ -22,6 +22,10 @@
     [class*="col-lg-4"] {
         margin-bottom: 120px;
     }
+    [class*="col-xs-0"] {
+        flex: 0 0 0;
+        max-width: 0;
+    }
 /* Fin genéricos */
 
 
@@ -118,6 +122,7 @@
     }
     .gray-line {
         border: 1px solid rgb(176, 172, 171);
+        background: rgb(176, 172, 171);
         float: right;
         width: 95.5%;
     }
@@ -148,14 +153,18 @@
 
     }
     .empty-cell-before-file {
-        /* background: blue; */
         height: 57px;
+        background: blue;
     }
-
     .custom-file-icon {
         font-size: 2.4rem;
     }
-
+    .empty-cell-before-file-first {
+        height: 56px;
+    }
+    .empty-cell-before-file-normal {
+        height: 56px;
+    }
     .document {
         margin-bottom: 16px;
     }
@@ -178,9 +187,9 @@
 /* Inicio media queries. fuente: https://www.w3schools.com/css/css_rwd_mediaqueries.asp*/
     /* Extra small devices (phones, 600px and down) */
     @media only screen and (max-width: 600px) {
-        /* #bootstrap_overrides {
+        #bootstrap_overrides {
             background-color: #808;
-        } */
+        }
         #bootstrap_overrides .custom-search-bar {
             width: 187px;
         }
@@ -188,7 +197,7 @@
             margin-right: -18px;
         }
         #bootstrap_overrides .custom-btn-identify, #bootstrap_overrides .custom-btn-identify-signed-in  {
-            width: 412px;
+            width: 335px;
         }
         .img-behind {
             transform: scale(1.2);
@@ -221,20 +230,74 @@
         #bootstrap_overrides .custom-teeth-open-icon{
             font-size: 6rem;
         }
+
+        /* Inicio identify */
+            #bootstrap_overrides .custom-full-name {
+                float: initial;
+            }
+            #bootstrap_overrides .custom-btn-slim, #bootstrap_overrides .custom-btn-slim-filled{
+                width: 109%;
+            }
+            .empty-cell-before-file-first {
+                height: 65px;
+            }
+            .empty-cell-before-file-normal {
+                height: 56px;
+            }
+            .document {
+                margin-bottom: 24px;
+            }
+            .gray-line {
+                width: 83.5%;   
+            }
+            #bootstrap_overrides .person-basic-data > * {
+                font-size: 0.7rem;
+            }
+            .letter {
+                font-size: 1rem;
+            }
+            /* .custom-file-icon {
+                font-size: 1.4rem;
+            } */
+        /* Fin identify */
     } 
 
     /* Small devices (portrait tablets and large phones, 600px and up) */
-    @media only screen and (min-width: 600px) {
-        /* #bootstrap_overrides {
+    @media only screen and (min-width: 600px) and (max-width: 767px){
+        #bootstrap_overrides {
             background-color: #000;
-        } */
+        }
+
+        /* Inicio identify */
+            #bootstrap_overrides .custom-full-name {
+                float: initial;
+            }
+            #bootstrap_overrides .custom-btn-slim, #bootstrap_overrides .custom-btn-slim-filled{
+                height: 54px;
+            }
+            #bootstrap_overrides .custom-btn-identify-signed-in, #bootstrap_overrides .custom-btn-identify  {
+                width: 538px;
+            }
+            .empty-cell-before-file-first {
+                height: 65px;
+            }
+            .empty-cell-before-file-normal {
+                height: 56px;
+            }
+            .document {
+                margin-bottom: 30px;
+            }
+            .gray-line {
+                width: 83.5%;
+            }
+        /* Fin identify */
     } 
 
     /* Medium devices (landscape tablets, 768px and up) */
     @media only screen and (min-width: 768px) {
-        /* #bootstrap_overrides {
+        #bootstrap_overrides {
             background-color: #0f0;
-        } */
+        }
         .margin-bottom-row {
             margin-bottom: 0;
         }
@@ -242,15 +305,18 @@
 
     /* Large devices (laptops/desktops, 992px and up) */
     @media only screen and (min-width: 992px) {
-        /* #bootstrap_overrides {
+        #bootstrap_overrides {
             background-color: #f00;
-        } */
+        }
     } 
 
     /* Extra large devices (large laptops and desktops, 1200px and up) */
     @media only screen and (min-width: 1200px) {
-        /* #bootstrap_overrides {
+        #bootstrap_overrides {
             background-color: #0ff;
-        } */
+        }
+        #bootstrap_overrides .custom-full-name {
+            float: left;
+        }
     }
 /* Fin media queries */

@@ -10,12 +10,26 @@
         #bootstrap_overrides {
             background-color: #000;
         }
+        
     } 
 
     /* Medium devices (landscape tablets, 768px and up) */
     @media only screen and (min-width: 768px) {
         #bootstrap_overrides {
             background-color: #0f0;
+        }
+
+        #bootstrap_overrides .custom-full-name {
+            float: initial;
+        }
+        #bootstrap_overrides .custom-btn-slim, #bootstrap_overrides .custom-btn-slim-filled{
+            height: 54px;
+        }
+        .empty-cell-before-file {
+            height: 65px;
+        }
+        .document {
+            margin-bottom: 30px;
         }
     } 
 
