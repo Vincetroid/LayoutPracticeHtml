@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>B & A</title>
+    <title>Visual</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
@@ -22,12 +22,12 @@
 <body id="bootstrap_overrides">
 
 <script src="js/nav.js"></script>
-<script src="js/btn-bioimpedance-anthropometry.js"></script>
+<script src="js/btn-visual.js"></script>
 <div id="nav"></div>
 
 <div class="container-fluid">
 
-    <div id="btn-bioimpedance-anthropometry"></div>
+    <div id="btn-visual"></div>
 
     <div class="row">
 
@@ -45,6 +45,27 @@
             <!-- Empty -->
         </div>
 
+
+        <div class="col-0 col-sm-1 col-md-1 col-lg-1">
+            <!-- Empty -->
+        </div>
+        <div class="col-10 col-sm-7 col-md-6 col-lg-5 double-vertical-margin-bottom">
+            <center>
+                <button class="btn my-2 my-sm-0 custom-btn-left" type="submit">
+                    <h2 class="text-white bold-font custom-btn-left-right-text">IZQUIERDO</h2>
+                </button>
+            </center>
+        </div>
+        <div class="col-2 col-sm-3 col-md-4 col-lg-5">
+            <center>
+                <button class="btn my-2 my-sm-0 custom-btn-right" type="submit">
+                    <h2 class="text-white bold-font custom-btn-left-right-text">DERECHO</h2>
+                </button>
+            </center>
+        </div>
+        <div class="col-0 col-sm-1 col-md-1 col-lg-1">
+            <!-- Empty -->
+        </div>
 
 
         <div class="col-0 col-sm-1 col-md-1 col-lg-1">
@@ -83,95 +104,81 @@
                     </tr>
                     <tr>
                         <td class="width-35-per">
-                            <p class="text-royal-blue bold-font float-left custom-form-label-element">PESO</p>
+                            <p class="text-royal-blue bold-font float-left custom-form-label-element">MIOPÍA</p>
                         </td>
                         <td class="width-50-per">
                             <div class="form-group">
-                                <input type="text" class="form-control" id="dateSignUp">
+                                <input type="checkbox" class="form-control" id="miopiaCheck">
                             </div>
+                            <!-- <label class="checkbox-container">
+                                <input type="checkbox" checked="checked">
+                                <span class="checkmark"></span>
+                            </label> -->
                         </td>
                         <td class="width-15-per">
-                            <p class="text-royal-blue bold-font units">kg</p>
                         </td>
                     </tr>
                     <tr>
                         <td class="width-35-per">
-                            <p class="text-royal-blue bold-font float-left custom-form-label-element">TALLA</p>
+                            <p class="text-royal-blue bold-font float-left custom-form-label-element">HIPERMETROPÍA</p>
                         </td>
                         <td class="width-50-per">
                             <div class="form-group">
-                                <input type="text" class="form-control" id="dateSignUp">
+                                <input type="checkbox" class="form-control" id="hipermetropiaCheck">
                             </div>
                         </td>
                         <td class="width-15-per">
-                            <p class="text-royal-blue bold-font units">cm</p>
                         </td>
                     </tr>
                     <tr>
                         <td class="width-35-per">
-                            <p class="text-royal-blue bold-font float-left custom-form-label-element">PERÍMETRO CEFÁLICO</p>
+                            <p class="text-royal-blue bold-font float-left custom-form-label-element">ASTIGMATISMO</p>
                         </td>
                         <td class="width-50-per">
                             <div class="form-group">
-                                <input type="text" class="form-control" id="dateSignUp">
+                                <input type="checkbox" class="form-control" id="astigmatismoCheck">
                             </div>
                         </td>
                         <td class="width-15-per">
-                            <p class="text-royal-blue bold-font units">cm</p>
                         </td>
                     </tr>
                     <tr>
                         <td class="width-35-per">
-                            <p class="text-royal-blue bold-font float-left custom-form-label-element">PERÍMETRO CINTURA</p>
+                            <p class="text-royal-blue bold-font float-left custom-form-label-element">ANISOMETROPÍA</p>
                         </td>
                         <td class="width-50-per">
                             <div class="form-group">
-                                <input type="text" class="form-control" id="dateSignUp">
+                                <input type="checkbox" class="form-control" id="anisometropiaCheck">
                             </div>
                         </td>
                         <td class="width-15-per">
-                            <p class="text-royal-blue bold-font units">cm</p>
                         </td>
                     </tr>
                     <tr>
                         <td class="width-35-per">
-                            <p class="text-royal-blue bold-font float-left custom-form-label-element">ÍNDICE DE MASA CORPORAL (IMC)</p>
+                            <p class="text-royal-blue bold-font float-left custom-form-label-element">ESTRABISMO</p>
                         </td>
                         <td class="width-50-per">
                             <div class="form-group">
-                                <input type="text" class="form-control" id="dateSignUp">
+                                <input type="checkbox" class="form-control" id="estrabismoCheck">
                             </div>
                         </td>
                         <td class="width-15-per">
-                            <p class="text-royal-blue bold-font units">kg/m2</p>
                         </td>
                     </tr>
                     <tr>
                         <td class="width-35-per">
-                            <p class="text-royal-blue bold-font float-left custom-form-label-element">CIRCUNFERENCIA DEL BRAZO</p>
+                            <p class="text-royal-blue bold-font float-left custom-form-label-element">ANISOCORÍA</p>
                         </td>
                         <td class="width-50-per">
                             <div class="form-group">
-                                <input type="text" class="form-control" id="dateSignUp">
+                                <input type="checkbox" class="form-control" id="anisocoriaCheck">
                             </div>
                         </td>
                         <td class="width-15-per">
-                            <p class="text-royal-blue bold-font units">cm</p>
                         </td>
                     </tr>
-                    <tr>
-                        <td class="width-35-per">
-                            <p class="text-royal-blue bold-font float-left custom-form-label-element">CIRCUNFERENCIA DEL MUSLO</p>
-                        </td>
-                        <td class="width-50-per">
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="dateSignUp">
-                            </div>
-                        </td>
-                        <td class="width-15-per">
-                            <p class="text-royal-blue bold-font units">cm</p>
-                        </td>
-                    </tr>
+                    
                     </tbody>
                 </table>
             </div>
